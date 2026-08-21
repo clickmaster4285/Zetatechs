@@ -1,6 +1,5 @@
-import { ClientOnly } from "@tanstack/react-router";
 import { NetworkCanvas } from "./NetworkCanvas";
-import heroVideo from "@/assets/headerVdo.mp4"; 
+import heroVideo from "@/assets/headerVdo.mp4";
 
 export function Hero() {
   return (
@@ -22,9 +21,7 @@ export function Hero() {
 
       {/* Network Canvas - now above video */}
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-full opacity-90 lg:w-[62%]">
-        <ClientOnly fallback={null}>
-          <NetworkCanvas />
-        </ClientOnly>
+        <NetworkCanvas />
       </div>
       
       {/* Gradient overlay - now above video */}
